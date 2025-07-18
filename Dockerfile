@@ -22,6 +22,4 @@ COPY --from=builder /app/cdn-api .
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
-COPY --from=builder /etc/mime.types /etc/mime.types
-
 ENTRYPOINT ["/cdn-api"]
